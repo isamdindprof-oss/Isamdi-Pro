@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isamdi.Pro | Архитектурные решения & Дизайн</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter & Syne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0d12',
+                        cardBg: '#131722',
+                        accentBlue: '#00f0ff',
+                        accentBlueDark: '#0077ff',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Syne', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'neon': '0 0 20px rgba(0, 240, 255, 0.25)',
+                        'neon-strong': '0 0 30px rgba(0, 240, 255, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0b0d12;
+            color: #e2e8f0;
+        }
+        .glow-effect {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(90px);
+            opacity: 0.15;
+            pointer-events: none;
+        }
+        .glass-card {
+            background: rgba(19, 23, 34, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(0, 240, 255, 0.4);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-black relative overflow-x-hidden">
+
+    <!-- Background Glow Blobs -->
+    <div class="glow-effect w-96 h-96 bg-cyan-500 top-10 left-1/4"></div>
+    <div class="glow-effect w-96 h-96 bg-blue-600 top-2/3 right-10"></div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-opacity-80 bg-darkBg border-b border-gray-800/60">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2 text-2xl font-display font-extrabold tracking-wider text-white">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">ISAMDI</span>.PRO
+            </a>
+            <div class="hidden md:flex gap-6 text-sm font-medium text-gray-300">
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Услуги и цены</a>
+                <a href="#calculator" class="hover:text-cyan-400 transition-colors">Рассчитать стоимость</a>
+                <a href="#contacts" class="hover:text-cyan-400 transition-colors">Контакты</a>
+            </div>
+            <a href="https://wa.me/79288785666" target="_blank" class="bg-gradient-to-r from-cyan-500 to-blue-600 text-black font-semibold text-xs md:text-sm px-4 py-2.5 rounded-full hover:shadow-neon transition-all duration-300 hover:scale-105">
+                <i class="fa-brands font-semibold fa-whatsapp mr-1.5"></i> Заказать проект
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="max-w-6xl mx-auto px-4 pt-16 pb-20 text-center relative">
+            <div class="inline-block px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-950/20 text-cyan-400 text-xs font-semibold tracking-wide uppercase mb-6 backdrop-blur-sm">
+                Архитектурные решения & Дизайн
+            </div>
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-display font-extrabold tracking-tight text-white mb-6 leading-tight">
+                Создаём идеальное пространство <br class="hidden sm:inline"> для вашей <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500">жизни и бизнеса</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-gray-400 text-base sm:text-lg mb-10 leading-relaxed">
+                Индивидуальное проектирование частных домов, благоустройство участков и современный дизайн фасадов. Точный расчёт, выверенная эстетика и качество.
+            </p>
+            
+            <!-- Quick Contact CTAs -->
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://wa.me/79288785666" target="_blank" class="glass-card hover:bg-emerald-600/20 border-emerald-500/40 text-emerald-400 hover:border-emerald-400 px-6 py-3.5 rounded-xl font-semibold text-sm flex items-center gap-2.5 transition-all duration-300 shadow-lg">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+                </a>
+                <a href="https://t.me/+79288785666" target="_blank" class="glass-card hover:bg-sky-600/20 border-sky-500/40 text-sky-400 hover:border-sky-400 px-6 py-3.5 rounded-xl font-semibold text-sm flex items-center gap-2.5 transition-all duration-300 shadow-lg">
+                    <i class="fa-brands fa-telegram text-lg"></i> Telegram
+                </a>
+                <a href="tel:89288785666" class="glass-card hover:bg-cyan-600/20 border-cyan-500/40 text-cyan-400 hover:border-cyan-400 px-6 py-3.5 rounded-xl font-semibold text-sm flex items-center gap-2.5 transition-all duration-300 shadow-lg">
+                    <i class="fa-solid fa-phone text-base"></i> 8 (928) 878-56-66
+                </a>
+            </div>
+        </section>
+
+        <!-- Pricing Catalog Section -->
+        <section id="services" class="max-w-6xl mx-auto px-4 py-16">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-display font-bold text-white mb-2">Актуальный прайс-лист</h2>
+                    <p class="text-gray-400 text-sm sm:text-base">Выберите категорию объекта для просмотра вариантов проектов</p>
+                </div>
+
+                <!-- Tabs Filter -->
+                <div class="flex flex-wrap gap-2 mt-6 md:mt-0 p-1.5 bg-darkBg border border-gray-800 rounded-xl">
+                    <button onclick="filterCategory('1-story')" id="btn-1-story" class="tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all duration-200 bg-gradient-to-r from-cyan-500 to-blue-600 text-black font-semibold shadow-neon">
+                        Одноэтажные
+                    </button>
+                    <button onclick="filterCategory('2-story')" id="btn-2-story" class="tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium text-gray-400 hover:text-white transition-all duration-200">
+                        Двухэтажные / Мансарда
+                    </button>
+                    <button onclick="filterCategory('facade')" id="btn-facade" class="tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium text-gray-400 hover:text-white transition-all duration-200">
+                        Ландшафт & Фасады
+                    </button>
+                </div>
+            </div>
+
+            <!-- Services Grid -->
+            <div id="pricing-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+
+                <!-- 1-STORY HOUSES -->
+                <div class="card-item 1-story glass-card p-6 sm:p-8 rounded-2xl relative flex flex-col justify-between hover:scale-[1.01] transition-transform duration-300">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-cyan-950/60 text-cyan-400 border border-cyan-500/30">Одноэтажный дом</span>
+                            <span class="text-2xl font-bold font-display text-white">40 000 <span class="text-sm font-normal text-gray-400">руб.</span></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">«Базовый»</h3>
+                        <p class="text-gray-400 text-sm mb-6">Проект чистого дома без благоустройства дворовой территории и облицовки.</p>
+                        <ul class="text-sm text-gray-300 space-y-2.5 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Архитектурный чертеж дома</li>
+                            <li class="flex items-center gap-2"><li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Планировка помещений</li>
+                            <li class="flex items-center gap-2 text-gray-500"><i class="fa-solid fa-xmark text-gray-600"></i> Без облицовки фасада</li>
+                            <li class="flex items-center gap-2 text-gray-500"><i class="fa-solid fa-xmark text-gray-600"></i> Без благоустройства двора</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/79288785666?text=Здравствуйте,%20интересует%20проект%20«Базовый»%20(одноэтажный)" target="_blank" class="w-full text-center py-3 rounded-xl border border-cyan-500/40 text-cyan-400 font-semibold text-sm hover:bg-cyan-500 hover:text-black transition-all">Заказать пакет</a>
+                </div>
+
+                <div class="card-item 1-story glass-card p-6 sm:p-8 rounded-2xl relative flex flex-col justify-between hover:scale-[1.01] transition-transform duration-300">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-cyan-950/60 text-cyan-400 border border-cyan-500/30">Одноэтажный дом</span>
+                            <span class="text-2xl font-bold font-display text-white">50 000 <span class="text-sm font-normal text-gray-400">руб.</span></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">«Базовый + Двор»</h3>
+                        <p class="text-gray-400 text-sm mb-6">Полная планировка дома и организация дворовой территории.</p>
+                        <ul class="text-sm text-gray-300 space-y-2.5 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Архитектура дома</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Проект навеса, забора и ворот</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Генеральное расположение на участке</li>
+                            <li class="flex items-center gap-2 text-gray-500"><i class="fa-solid fa-xmark text-gray-600"></i> Без детальной облицовки</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/79288785666?text=Здравствуйте,%20интересует%20проект%20«Базовый%20+%20Двор»%20(одноэтажный)" target="_blank" class="w-full text-center py-3 rounded-xl border border-cyan-500/40 text-cyan-400 font-semibold text-sm hover:bg-cyan-500 hover:text-black transition-all">Заказать пакет</a>
+                </div>
+
+                <div class="card-item 1-story glass-card p-6 sm:p-8 rounded-2xl relative flex flex-col justify-between hover:scale-[1.01] transition-transform duration-300">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-cyan-950/60 text-cyan-400 border border-cyan-500/30">Одноэтажный дом</span>
+                            <span class="text-2xl font-bold font-display text-white">55 000 <span class="text-sm font-normal text-gray-400">руб.</span></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">«Стандарт»</h3>
+                        <p class="text-gray-400 text-sm mb-6">Стильное архитектурное решение с подбором всех материалов и цветов.</p>
+                        <ul class="text-sm text-gray-300 space-y-2.5 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Полный проект дома</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Дизайн облицовки фасадов</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Подбор оттенков крыши, окон, дверей</li>
+                            <li class="flex items-center gap-2 text-gray-500"><i class="fa-solid fa-xmark text-gray-600"></i> Без проектирования двора</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/79288785666?text=Здравствуйте,%20интересует%20проект%20«Стандарт»%20(одноэтажный)" target="_blank" class="w-full text-center py-3 rounded-xl border border-cyan-500/40 text-cyan-400 font-semibold text-sm hover:bg-cyan-500 hover:text-black transition-all">Заказать пакет</a>
+                </div>
+
+                <div class="card-item 1-story glass-card p-6 sm:p-8 rounded-2xl relative flex flex-col justify-between border-cyan-500/50 hover:scale-[1.01] transition-transform duration-300 shadow-neon">
+                    <div class="absolute -top-3 right-6 bg-gradient-to-r from-cyan-500 to-blue-600 text-black text-[10px] font-extrabold uppercase tracking-widest px-3 py-1 rounded-full">
+                        Все включено
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-cyan-950/60 text-cyan-400 border border-cyan-500/30">Одноэтажный дом</span>
+                            <span class="text-2xl font-bold font-display text-white">70 000 <span class="text-sm font-normal text-gray-400">руб.</span></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">«Максимальный»</h3>
+                        <p class="text-gray-400 text-sm mb-6">Премиальный комплексный проект дома, фасадов и прилегающего участка.</p>
+                        <ul class="text-sm text-gray-300 space-y-2.5 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Полный проект дома + облицовка</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Подбор всех отделочных материалов</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Заборы, ворота, навесы и въездная группа</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Ландшафтное зонирование участка</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/79288785666?text=Здравствуйте,%20интересует%20проект%20«Максимальный»%20(одноэтажный)" target="_blank" class="w-full text-center py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-black font-semibold text-sm hover:shadow-neon transition-all">Заказать пакет</a>
+                </div>
+
+                <!-- 2-STORY HOUSES (Hidden by default via JS filter) -->
+                <div class="card-item 2-story hidden glass-card p-6 sm:p-8 rounded-2xl relative flex flex-col justify-between hover:scale-[1.01] transition-transform duration-300">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-950/60 text-indigo-400 border border-indigo-500/30">2 Этажа / Мансарда</span>
+                            <span class="text-2xl font-bold font-display text-white">60 000 <span class="text-sm font-normal text-gray-400">руб.</span></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">«Базовый 2 этажа»</h3>
+                        <p class="text-gray-400 text-sm mb-6">Архитектурное решение двухэтажного здания без облицовки и двора.</p>
+                        <ul class="text-sm text-gray-300 space-y-2.5 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Проект двухэтажного дома/мансарды</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Планировка этажей и лестничных узлов</li>
+                            <li class="flex items-center gap-2 text-gray-500"><i class="fa-solid fa-xmark text-gray-600"></i> Без облицовки фасадов</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/79288785666?text=Здравствуйте,%20интересует%20проект%20«Базовый%202%20этажа»" target="_blank" class="w-full text-center py-3 rounded-xl border border-cyan-500/40 text-cyan-400 font-semibold text-sm hover:bg-cyan-500 hover:text-black transition-all">Заказать пакет</a>
+                </div>
+
+                <div class="card-item 2-story hidden glass-card p-6 sm:p-8 rounded-2xl relative flex flex-col justify-between hover:scale-[1.01] transition-transform duration-300">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-950/60 text-indigo-400 border border-indigo-500/30">2 Этажа / Мансарда</span>
+                            <span class="text-2xl font-bold font-display text-white">70 000 <span class="text-sm font-normal text-gray-400">руб.</span></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">«Базовый 2 этажа + Двор»</h3>
+                        <p class="text-gray-400 text-sm mb-6">Двухэтажный дом с планировкой территории двора, забора и навесов.</p>
+                        <ul class="text-sm text-gray-300 space-y-2.5 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Полная архитектура дома</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Проект двора, ворота, забор, навес</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Оптимизация расположения объектов</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/79288785666?text=Здравствуйте,%20интересует%20проект%20«Базовый%202%20этажа%20+%20Двор»" target="_blank" class="w-full text-center py-3 rounded-xl border border-cyan-500/40 text-cyan-400 font-semibold text-sm hover:bg-cyan-500 hover:text-black transition-all">Заказать пакет</a>
+                </div>
+
+                <div class="card-item 2-story hidden glass-card p-6 sm:p-8 rounded-2xl relative flex flex-col justify-between hover:scale-[1.01] transition-transform duration-300">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-950/60 text-indigo-400 border border-indigo-500/30">2 Этажа / Мансарда</span>
+                            <span class="text-2xl font-bold font-display text-white">70 000 <span class="text-sm font-normal text-gray-400">руб.</span></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">«Стандарт 2 этажа»</h3>
+                        <p class="text-gray-400 text-sm mb-6">Двухэтажный дом с подбором стиля фасада, цветовых гамм и материалов.</p>
+                        <ul class="text-sm text-gray-300 space-y-2.5 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Архитектурное решение дома</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Дизайн облицовки 2 этажей</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Подбор тонировки окон, крыши, фасада</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/79288785666?text=Здравствуйте,%20интересует%20проект%20«Стандарт%202%20этажа»" target="_blank" class="w-full text-center py-3 rounded-xl border border-cyan-500/40 text-cyan-400 font-semibold text-sm hover:bg-cyan-500 hover:text-black transition-all">Заказать пакет</a>
+                </div>
+
+                <div class="card-item 2-story hidden glass-card p-6 sm:p-8 rounded-2xl relative flex flex-col justify-between border-cyan-500/50 hover:scale-[1.01] transition-transform duration-300 shadow-neon">
+                    <div class="absolute -top-3 right-6 bg-gradient-to-r from-cyan-500 to-blue-600 text-black text-[10px] font-extrabold uppercase tracking-widest px-3 py-1 rounded-full">
+                        Флагманский проект
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-950/60 text-indigo-400 border border-indigo-500/30">2 Этажа / Мансарда</span>
+                            <span class="text-2xl font-bold font-display text-white">90 000 <span class="text-sm font-normal text-gray-400">руб.</span></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">«Максимальный 2 этажа»</h3>
+                        <p class="text-gray-400 text-sm mb-6">Полный дизайн-проект для двухэтажного дома с благоустройством двора 4-6 соток.</p>
+                        <ul class="text-sm text-gray-300 space-y-2.5 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Проект 2-этажного дома с облицовкой</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Забор, ворота, архитектурные навесы</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Полное ландшафтное зонирование</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/79288785666?text=Здравствуйте,%20интересует%20проект%20«Максимальный%202%20этажа»" target="_blank" class="w-full text-center py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-black font-semibold text-sm hover:shadow-neon transition-all">Заказать пакет</a>
+                </div>
+
+                <!-- FACADE & LANDSCAPE (Hidden by default via JS filter) -->
+                <div class="card-item facade hidden glass-card p-6 sm:p-8 rounded-2xl relative flex flex-col justify-between hover:scale-[1.01] transition-transform duration-300">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-blue-950/60 text-blue-400 border border-blue-500/30">Ландшафт</span>
+                            <span class="text-2xl font-bold font-display text-white">200 - 300 <span class="text-sm font-normal text-gray-400">руб./м²</span></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">«Ландшафтный дизайн»</h3>
+                        <p class="text-gray-400 text-sm mb-6">Разработка индивидуального ландшафтного проекта участка (от 4 до 6+ соток).</p>
+                        <ul class="text-sm text-gray-300 space-y-2.5 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Зонирование дворовой территории</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Расстановка малых архитектурных форм</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Расчет зависит от площади участка</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/79288785666?text=Здравствуйте,%20интересует%20«Ландшафтный%20дизайн»" target="_blank" class="w-full text-center py-3 rounded-xl border border-cyan-500/40 text-cyan-400 font-semibold text-sm hover:bg-cyan-500 hover:text-black transition-all">Заказать проект</a>
+                </div>
+
+                <div class="card-item facade hidden glass-card p-6 sm:p-8 rounded-2xl relative flex flex-col justify-between hover:scale-[1.01] transition-transform duration-300">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-blue-950/60 text-blue-400 border border-blue-500/30">Фасад</span>
+                            <span class="text-2xl font-bold font-display text-white">25 - 45 <span class="text-sm font-normal text-gray-400">т.р.</span></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">«Дизайн фасада»</h3>
+                        <p class="text-gray-400 text-sm mb-6">Проект внешнего вида для жилых домов, магазинов и коммерческих объектов.</p>
+                        <ul class="text-sm text-gray-300 space-y-2.5 mb-8">
+                            <li class="flex items-center gap-2"><li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Для частных домов и коммерции</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Визуализация отделочных материалов</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Точная цена зависит от масштаба объекта</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/79288785666?text=Здравствуйте,%20интересует%20«Дизайн%20фасада»" target="_blank" class="w-full text-center py-3 rounded-xl border border-cyan-500/40 text-cyan-400 font-semibold text-sm hover:bg-cyan-500 hover:text-black transition-all">Заказать проект</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Interactive Cost Calculator -->
+        <section id="calculator" class="max-w-4xl mx-auto px-4 py-16">
+            <div class="glass-card p-6 sm:p-10 rounded-3xl border border-cyan-500/30 relative">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-display font-bold text-white mb-2">Быстрый расчёт стоимости</h2>
+                    <p class="text-gray-400 text-sm">Выберите нужные варианты для моментальной оценки вашего проекта</p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Step 1: Type -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">1. Тип объекта</label>
+                        <select id="calc-type" onchange="calculateTotal()" class="w-full bg-darkBg border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-400 transition-colors">
+                            <option value="40000">Одноэтажный дом (от 40 000 руб.)</option>
+                            <option value="60000">Двухэтажный дом / Мансарда (от 60 000 руб.)</option>
+                            <option value="35000">Дизайн фасада (от 35 000 руб.)</option>
+                        </select>
+                    </div>
+
+                    <!-- Step 2: Extras -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">2. Дополнительные опции</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <label class="flex items-center gap-3 p-3 bg-darkBg border border-gray-800 rounded-xl cursor-pointer hover:border-gray-700">
+                                <input type="checkbox" id="opt-yard" onchange="calculateTotal()" value="10000" class="w-4 h-4 accent-cyan-400">
+                                <span class="text-sm text-gray-300">Проект двора / ворот / навеса (+10 000 ₽)</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3 bg-darkBg border border-gray-800 rounded-xl cursor-pointer hover:border-gray-700">
+                                <input type="checkbox" id="opt-facade" onchange="calculateTotal()" value="15000" class="w-4 h-4 accent-cyan-400">
+                                <span class="text-sm text-gray-300">Облицовка & подбор оттенков (+15 000 ₽)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Total Output -->
+                    <div class="pt-6 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div>
+                            <span class="text-xs text-gray-400 uppercase tracking-wider block">Ориентировочная стоимость</span>
+                            <span id="calc-result" class="text-3xl font-display font-extrabold text-cyan-400">40 000 руб.</span>
+                        </div>
+                        <button onclick="sendCalculatedOrder()" class="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-cyan-500 to-blue-600 text-black font-bold text-sm rounded-xl hover:shadow-neon transition-all">
+                            Отправить расчёт в WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacts" class="max-w-6xl mx-auto px-4 py-16">
+            <div class="glass-card rounded-3xl p-8 sm:p-12 text-center border-gray-800">
+                <h2 class="text-3xl font-display font-bold text-white mb-4">Готовы начать ваш проект?</h2>
+                <p class="text-gray-400 max-w-xl mx-auto text-sm sm:text-base mb-8">
+                    Свяжитесь с нами прямо сейчас для консультации и обсуждения деталей вашего будущего дома или коммерческого объекта.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-8">
+                    <a href="tel:89288785666" class="text-xl font-display font-bold text-white hover:text-cyan-400 transition-colors flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-950 flex items-center justify-center text-cyan-400 border border-cyan-500/30">
+                            <i class="fa-solid fa-phone text-sm"></i>
+                        </div>
+                        8 (928) 878-56-66
+                    </a>
+                </div>
+
+                <div class="flex justify-center gap-4">
+                    <a href="https://wa.me/79288785666" target="_blank" class="w-12 h-12 rounded-full bg-darkBg border border-gray-700 flex items-center justify-center text-emerald-400 hover:border-emerald-500 hover:scale-110 transition-all text-xl">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://t.me/+79288785666" target="_blank" class="w-12 h-12 rounded-full bg-darkBg border border-gray-700 flex items-center justify-center text-sky-400 hover:border-sky-500 hover:scale-110 transition-all text-xl">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800/80 py-8 bg-darkBg">
+        <div class="max-w-6xl mx-auto px-4 text-center text-xs text-gray-500">
+            <p class="mb-2">© 2026 Isamdi.Pro — Архитектурные решения & Дизайн. Все права защищены.</p>
+            <p>Телефон / WhatsApp / Telegram: 8 (928) 878-56-66</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        // Category Switcher
+        function filterCategory(category) {
+            const cards = document.querySelectorAll('.card-item');
+            const buttons = document.querySelectorAll('.tab-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-gradient-to-r', 'from-cyan-500', 'to-blue-600', 'text-black', 'font-semibold', 'shadow-neon');
+                btn.classList.add('text-gray-400');
+            });
+
+            const activeBtn = document.getElementById(`btn-${category}`);
+            activeBtn.classList.add('bg-gradient-to-r', 'from-cyan-500', 'to-blue-600', 'text-black', 'font-semibold', 'shadow-neon');
+            activeBtn.classList.remove('text-gray-400');
+
+            cards.forEach(card => {
+                if (card.classList.contains(category)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // Live Calculator Logic
+        function calculateTotal() {
+            const basePrice = parseInt(document.getElementById('calc-type').value);
+            const yardPrice = document.getElementById('opt-yard').checked ? parseInt(document.getElementById('opt-yard').value) : 0;
+            const facadePrice = document.getElementById('opt-facade').checked ? parseInt(document.getElementById('opt-facade').value) : 0;
+
+            const total = basePrice + yardPrice + facadePrice;
+            document.getElementById('calc-result').innerText = total.toLocaleString('ru-RU') + ' руб.';
+        }
+
+        function sendCalculatedOrder() {
+            const total = document.getElementById('calc-result').innerText;
+            const typeSelect = document.getElementById('calc-type');
+            const typeText = typeSelect.options[typeSelect.selectedIndex].text;
+            
+            let extras = [];
+            if (document.getElementById('opt-yard').checked) extras.push("Проект двора");
+            if (document.getElementById('opt-facade').checked) extras.push("Облицовка");
+
+            let msg = `Здравствуйте, я рассчитал проект на сайте Isamdi.Pro:%0A- Тип: ${typeText}%0A`;
+            if (extras.length > 0) {
+                msg += `- Доп. опции: ${extras.join(', ')}%0A`;
+            }
+            msg += `- Итоговая оценка: ${total}`;
+
+            window.open(`https://wa.me/79288785666?text=${msg}`, '_blank');
+        }
+    </script>
+</body>
+</html>
